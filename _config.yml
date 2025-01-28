@@ -1,8 +1,108 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Curated News Docs
+description: This repository contains our open source Curated News & Curated News Business Documentation. The goal of this repository is to provide information and awareness.
 theme: just-the-docs
+baseurl: ""
+url: https://docs.curatednews.xyz
+repository: curatednews/docs
+favicon_ico: "https://curatednews.xyz/static/images/favicon.ico"
 
-url: https://just-the-docs.github.io
+permalink: pretty
+
+defaults:
+  - scope:
+      path: "docs"
+      type: "pages"
+    values:
+      layout: "default"
+
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 2
+  preview_words_before: 3
+  preview_words_after: 3
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+  focus_shortcut_key: "k"
+
+enable_copy_code_button: true
+
+mermaid:
+  version: "9.1.6"
+
+heading_anchors: true
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  "GitHub":
+    -"https://github.com/curatednews/docs"
+
+aux_links_new_tab: false
+
+nav_enabled: true
+
+nav_sort: case_sensitive
+
+nav_external_links:
+  - title: Curated News
+    url: https://curatednews.xyz
+  - title: Curated News Business
+    url: https://curatednewsbusiness.xyz
+  - title: Contact Us
+    url: https://curatednews.xyz/curatedcontact
+  - title: Report Bugs
+    url: https://curatednews.xyz/curatedbugreporter
+
+nav_error_report: true
+
+liquid:
+  error_mode: strict
+  strict_filters: true
+
+footer_content: 'Copyright &copy; Curated News. Powered by <a href="https://github.com/just-the-docs/just-the-docs/">Just the Docs</a>'
+
+last_edit_timestamp: true
+last_edit_time_format: "%b %e %Y at %I:%M %p"
+
+gh_edit_link: true
+gh_edit_link_text: "Edit on GitHub"
+gh_edit_repository: "https://github.com/CuratedNews/docs"
+gh_edit_branch: "main"
+gh_edit_source: docs
+gh_edit_view_mode: "tree"
+
+color_scheme: nil
+
+callouts_level: quiet
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-include-cache
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
