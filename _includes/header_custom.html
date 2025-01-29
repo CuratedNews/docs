@@ -1,22 +1,39 @@
-<button class="btn js-toggle-dark-mode">Light</button>
+<button id="theme-toggle" class="btn js-toggle-dark-mode light-accent"><i id="theme-icon" class="fa fa-sun-o" aria-hidden="true"></i> Light</button>
 
 <script>
-const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+const toggleDarkMode = document.getElementById("theme-toggle");
+const toggleIcon = document.getElementById("theme-icon");
 if(localStorage.getItem('theme') === 'dark'){
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Dark';
+    toggleDarkMode.textContent = ' Dark';
+    toggleDarkMode.classList.add("dark-accent");
+    toggleDarkMode.classList.remove("light-accent"); 
+    toggleIcon.classList.remove("fa-sun-o");
+    toggleIcon.classList.add("fa-moon-o");
 } else {
     jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Light';
+    toggleDarkMode.textContent = ' Light';
+    toggleDarkMode.classList.add("light-accent");
+    toggleDarkMode.classList.remove("dark-accent");
+    toggleIcon.classList.remove("fa-moon-o");
+    toggleIcon.classList.add("fa-sun-o");
 }
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
     jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Light';
+    toggleDarkMode.textContent = ' Light';
+    toggleDarkMode.classList.add("light-accent");
+    toggleDarkMode.classList.remove("dark-accent");
+    toggleIcon.classList.remove("fa-moon-o");
+    toggleIcon.classList.add("fa-sun-o");
     localStorage.setItem('theme', 'light');
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Dark';
+    toggleDarkMode.textContent = ' Dark';
+    toggleDarkMode.classList.add("dark-accent");
+    toggleDarkMode.classList.remove("light-accent");
+    toggleIcon.classList.remove("fa-sun-o");
+    toggleIcon.classList.add("fa-moon-o");
     localStorage.setItem('theme', 'dark');
   }
 });

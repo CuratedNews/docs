@@ -13,7 +13,7 @@ Curated News wants users to have technical explanations on how our services work
 {: .fs-6 .fw-300 }
 
 [Learn more](#learn-more){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on GitHub][https://github.com/curatednews/docs]{: .btn .fs-5 .mb-4 .mb-md-0 }
+[View it on GitHub](https://github.com/curatednews/docs){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
