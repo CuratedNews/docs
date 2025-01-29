@@ -1,10 +1,11 @@
-$color-scheme: light_custom !default;
+@import "./color_schemes/light";
+$color-scheme: light !default;
 $body-background-color: $white !default;
 $body-heading-color: $grey-dk-300 !default;
 $body-text-color: $grey-dk-100 !default;
 $link-color: $blue-000 !default;
 $nav-child-link-color: $grey-dk-100 !default;
-$sidebar-color: $bar !default;
+$sidebar-color: #242527 !default;
 $base-button-color: #f7f7f7 !default;
 $btn-primary-color: $blue-100 !default;
 $code-background-color: $grey-lt-000 !default;
