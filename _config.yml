@@ -4,7 +4,8 @@ theme: just-the-docs
 baseurl: ""
 url: https://docs.curatednews.xyz
 repository: curatednews/docs
-favicon_ico: "https://curatednews.xyz/static/images/favicon.ico"
+favicon_ico: https://curatednews.xyz/static/images/favicon.ico
+search_placeholder: Search our docs 
 
 permalink: pretty
 
@@ -33,11 +34,10 @@ mermaid:
 
 heading_anchors: true
 
-aux_links:
-  "GitHub":
-    -"https://github.com/curatednews/docs"
-
-aux_links_new_tab: false
+#aux_links:
+#  "GitHub":
+#    -"https://github.com/curatednews/docs"
+#aux_links_new_tab: false
 
 nav_enabled: true
 
@@ -71,7 +71,7 @@ gh_edit_branch: "main"
 gh_edit_source: docs
 gh_edit_view_mode: "tree"
 
-color_scheme: nil
+color_scheme: light_custom
 
 callouts_level: quiet
 callouts:

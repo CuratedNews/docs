@@ -1,0 +1,50 @@
+.site-title{
+    font-family: changa;
+    color: #fff;
+}
+.site-title:hover{
+    background-image: none;
+    background-color: #1854f1;
+}
+.site-button:hover{
+    background-image: none;
+    color: #fff;
+    background-color: #1854f1;
+}
+.nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active{
+    background-image: none;
+    border-bottom: 1px solid #1854f1;
+}
+.js-toggle-dark-mode{
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+    height: 30px;
+    top: 25%;
+}
+.dark-accent{
+    background-color: #303030 !important;
+}
+.light-accent{
+    background-color: #e5e5e5 !important;
+}
+
+/* Responsiveness Classes */
+@media only screen and (max-width: 600px) {
+    .side-bar + .main .main-header.nav-open {
+        display: block;
+        position: fixed;
+        top: 40px;
+        width: 100%;
+    }
+    .js-toggle-dark-mode{
+        position: fixed;
+        top: 0;
+        right: 50px;
+        top: 10px;
+    }
+    .search-results{
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
