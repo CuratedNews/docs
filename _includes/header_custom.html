@@ -15,7 +15,7 @@ if(localStorage.getItem('theme') === 'dark'){
     toggleDarkMode.classList.remove("dark-accent");
 }
 jtd.addEvent(toggleDarkMode, 'click', function(){
-  if (jtd.getTheme() === 'dark') {
+  if (jtd.getTheme() === 'dark_custom') {
     jtd.setTheme('light_custom');
     toggleDarkMode.innerHTML = '<i id="theme-icon" class="fa fa-sun-o" aria-hidden="true"></i> Light';
     toggleDarkMode.classList.add("light-accent");
