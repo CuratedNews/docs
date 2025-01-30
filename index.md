@@ -9,7 +9,7 @@ permalink: /
 # Let's get you up to speed
 {: .fs-9 }
 
-Curated News wants users to have technical explanations on how our services work and operate.
+We want users to have technical explanations on how our services work and operate.
 {: .fs-6 .fw-300 }
 
 [Learn more](#learn-more){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
