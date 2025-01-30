@@ -1,3 +1,10 @@
+html{
+    background: url("/static/images/docspatternbg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 .site-title{
     font-family: changa !important;
     color: #fff !important;
@@ -82,6 +89,9 @@
     .main-content-wrap{
         margin-left: 20px !important; 
     }
+    .site-header{
+        border-bottom: none !important;
+    }
     .side-bar + .main .main-header{
         margin-left: 20px !important;
     }
@@ -108,18 +118,31 @@
         height: 50px !important;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px){
+    .main-content{
+        margin-top: 75px !important;
+    }
+    .side-bar{
+        position: fixed !important;
+        width: 100% !important;
+        z-index: 5 !important;
+    }
+    .search-input{
+        font-size: 16px !important;
+    }
     .side-bar + .main .main-header.nav-open {
         display: block !important;
         position: fixed !important;
-        top: 40px !important;
+        top: 50px !important;
         width: 100% !important;
+        border-bottom: 0 !important;
+        z-index: 6;
     }
     .js-toggle-dark-mode{
         position: fixed !important;
         top: 0 !important;
-        right: 50px !important;
-        top: 10px !important;
+        right: 40px !important;
+        top: 12.5px !important;
     }
     .search-results{
         border-bottom-right-radius: 0 !important;
